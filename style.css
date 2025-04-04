@@ -34,17 +34,39 @@ header {
 .logo {
     font-size: 2.5rem;
     color: #333333;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 
 
-nav a {
-    transition: 3s;
-    margin-left: 3.5rem;
-    font-size: 1.7rem;
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
     font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
     color: #333333;
 }
-nav a:hover {
+.navbar a:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.navbar a:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.navbar a:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.navbar a:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.navbar a:nth-child(5) {
+    animation-delay: 1s;
+}
+.navbar a:hover {
     color: #f4d7d7;
 }
 
@@ -52,6 +74,7 @@ nav a:hover {
 section {
     padding: 100px;
     min-height: 100vh;
+    padding-bottom: 7rem;
 }
 .banner {
     position: relative;
@@ -59,6 +82,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center ;
+    padding: 100px;
 }
 .banner .imgSidebar {
     flex: 1;
@@ -192,7 +216,8 @@ section {
     align-items: center;
     flex-direction: column;
     min-height: auto;
-    padding-bottom: 5rem;
+    padding: 100px;
+    padding-bottom: 7rem;
     min-width: 49%;
     justify-content: space-between;
     font-size: 1.5rem;
@@ -235,8 +260,9 @@ section {
 
 
 .interests-skills {
-    padding: 40px;
+    padding: 100px;
     background-color: #f4d7d7;
+    padding-bottom: 7rem;
 }
 .interests-skills h2 {
     position: relative;
@@ -296,6 +322,7 @@ section {
 
 .projects {
     min-height: auto;
+    padding: 100px;
     padding-bottom: 7rem;
     background: #b76e79;
     width: 100%;
@@ -355,6 +382,8 @@ section {
 
 .contact {
     background: #f4d7d7;
+    padding: 100px;
+    padding-bottom: 7rem;
 }
 .contact form {
     margin: 5rem 0;
@@ -403,6 +432,27 @@ section {
     text-align: center;
     font-size: 16px;
     margin-top: 40px;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    0% {
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatex(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slideLeft {
