@@ -356,7 +356,6 @@ section {
     border-radius: 3rem;
     gap: 2rem;
     padding: 5rem 2rem;
-    overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 5px #f4d7d7;
     transition: .3s ease;
