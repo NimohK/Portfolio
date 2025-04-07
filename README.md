@@ -15,7 +15,7 @@ Hi, I'm Catherine Wairimu Wambu! I am currently studying **Software Engineering*
 
 I believe in continuous learning and have applied my diverse background to develop applications that address real-world challenges. Whether through coding, design, or client collaboration, I aim to create amazing, user-centered solutions.
 
-Feel free to explore my portfolio, and let’s connect if you’re interested in collaboration or simply want to learn more!
+Feel free to explore my portfolio, and let’s connect if you’re interested in collaboration or simply want to learn more! https://catherine-pearl.vercel.app/ 
 
 ## Contact
 
