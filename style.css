@@ -33,7 +33,6 @@ header {
 }
 .logo {
     font-size: 2.5rem;
-    color: #333333;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
@@ -49,7 +48,7 @@ header {
     opacity: 0;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
-    color: #333333;
+    color: black;
 }
 .navbar a:nth-child(1) {
     animation-delay: 0.2s;
@@ -91,7 +90,7 @@ section {
 .banner .imgSidebar img {
     will-change: transform, opacity;
     opacity: 0;
-    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation: zoomIn 1s ease forwards, floatImage 5s ease-in-out infinite;
     animation-delay: 2s, 3s;
     border-radius: 10px;
     box-shadow: 0 0 100px #b76e79;
@@ -153,7 +152,7 @@ section {
 
 .btn {
     background: #b76e79;
-    color: #333333;
+    color: black;
     padding: 10px 30px;
     display: inline-block;
     text-decoration: none;
@@ -223,6 +222,7 @@ section {
     font-size: 1.5rem;
     width: 100%;
     background: #b76e79;
+    color: black;
 }
 .education h2 {
     color: #f4d7d7;
